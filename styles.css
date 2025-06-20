@@ -77,6 +77,18 @@ input[type="text"] {
     gap: 1.2rem;
 }
 
+.utm-field-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .utm-field-group {
+        grid-template-columns: 1fr;
+    }
+}
+
 .utm-field {
     display: flex;
     flex-direction: column;
