@@ -172,12 +172,18 @@ document.addEventListener('DOMContentLoaded', () => {
     copyButton.addEventListener('click', copyToClipboard);
 
     // Initialize with placeholder values
-    baseInput.value = 'https://example.com';
-    sourceInput.value = 'google';
-    mediumInput.value = 'cpc';
-    campaignInput.value = 'storm_chaser';
-    termInput.value = 'Windsurf_Boards';
-    contentInput.value = 'QRcode_banner';
+    baseInput.value = '';
+    baseInput.placeholder = 'https://example.com';
+    sourceInput.value = '';
+    sourceInput.placeholder = 'google';
+    mediumInput.value = '';
+    mediumInput.placeholder = 'cpc';
+    campaignInput.value = '';
+    campaignInput.placeholder = 'storm_chaser';
+    termInput.value = '';
+    termInput.placeholder = 'Windsurf_Boards';
+    contentInput.value = '';
+    contentInput.placeholder = 'QRcode_banner';
 
     // Initial URL generation
     updateGeneratedUrl();
