@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sourceInput.value = 'google';
     mediumInput.value = 'cpc';
     campaignInput.value = 'storm_chaser';
-    termInput.value = 'shoes';
+    termInput.value = 'Windsurf_Boards';
     contentInput.value = '';
 
     // Initial URL generation
