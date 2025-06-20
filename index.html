@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTM Parameter Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <img src="https://b929299.smushcdn.com/929299/wp-content/uploads/2024/02/HEYPRESSGO-LOGO-1.png?lossy=2&strip=1&webp=1" alt="HeyPressgo Logo" class="logo">
+        </div>
+        <h1>HeyPressgo Campaign Builder</h1>
+        <p class="subtitle">Create trackable campaign URLs for your marketing efforts. Use this tool to generate UTM parameters for your email campaigns, social media posts, and paid advertising.</p>
+        
+        <div class="form-section">
+            <label for="base-url">Your Website URL</label>
+            <input type="url" id="base-url" placeholder="Enter your website URL" value="https://example.com">
+        </div>
+
+        <div class="utm-section">
+            <div class="utm-field">
+                <label for="utm-source">Source</label>
+                <p class="description">The source of the traffic (e.g., google, newsletter, social)</p>
+                <input type="text" id="utm-source" placeholder="utm_source" value="google">
+            </div>
+            <div class="utm-field">
+                <label for="utm-medium">Medium</label>
+                <p class="description">The marketing medium (e.g., email, cpc, social)</p>
+                <input type="text" id="utm-medium" placeholder="utm_medium" value="cpc">
+            </div>
+            <div class="utm-field">
+                <label for="utm-campaign">Campaign</label>
+                <p class="description">The specific campaign name (e.g., spring_sale, black_friday)</p>
+                <input type="text" id="utm-campaign" placeholder="utm_campaign" value="spring_sale">
+            </div>
+            <div class="utm-field">
+                <label for="utm-content">Content</label>
+                <p class="description">Used to differentiate similar content (e.g., banner1, banner2)</p>
+                <input type="text" id="utm-content" placeholder="utm_content (optional)">
+            </div>
+            <div class="utm-field">
+                <label for="utm-term">Term</label>
+                <p class="description">Search terms used in paid search (e.g., summer shoes, running shoes)</p>
+                <input type="text" id="utm-term" placeholder="utm_term (optional)" value="shoes">
+            </div>
+            <div class="qr-section">
+                <label for="qr-code">QR Code</label>
+                <div id="qr-code"></div>
+                <a href="#" id="qr-download" class="download-link">Click to download QR code as PNG</a>
+            </div>
+        </div>
+
+        <div class="generated-url-section">
+            <p class="description">Your generated URL:</p>
+            <input type="text" id="generated-url" readonly>
+            <button id="copy-button">Copy URL</button>
+        </div>
+    </div>
+
+    <!-- QR Code library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
