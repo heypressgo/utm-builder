@@ -77,6 +77,31 @@ input[type="url"]::placeholder,
 input[type="text"]::placeholder {
     color: #999;
     font-style: italic;
+    opacity: 0.7;
+}
+
+/* WebKit/Blink browsers */
+input[type="url"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder {
+    color: #999;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Firefox */
+input[type="url"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder {
+    color: #999;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* IE 10+ */
+input[type="url"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder {
+    color: #999;
+    font-style: italic;
+    opacity: 0.7;
 }
 
 .utm-section {
