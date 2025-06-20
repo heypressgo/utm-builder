@@ -91,18 +91,27 @@ input[type="text"] {
 }
 
 #qr-code {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
-    overflow: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
 }
 
 #qr-code canvas {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.download-link {
+.download-link,
+.high-res-download-link {
     display: block;
     text-align: center;
     font-size: 0.7rem;
@@ -110,6 +119,11 @@ input[type="text"] {
     text-decoration: none;
     margin-top: 0.5rem;
     transition: color 0.3s ease;
+}
+
+.high-res-download-link {
+    color: #2c3e50;
+    font-weight: bold;
 }
 
 .download-link:hover {
