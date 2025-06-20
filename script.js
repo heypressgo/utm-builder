@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mediumInput.value = 'cpc';
     campaignInput.value = 'storm_chaser';
     termInput.value = 'Windsurf_Boards';
-    contentInput.value = '';
+    contentInput.value = 'QRcode_banner';
 
     // Initial URL generation
     updateGeneratedUrl();

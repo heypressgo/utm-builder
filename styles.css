@@ -70,6 +70,13 @@ input[type="text"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 0.95rem;
+    color: #333;
+}
+
+input[type="url"]::placeholder,
+input[type="text"]::placeholder {
+    color: #999;
+    font-style: italic;
 }
 
 .utm-section {
